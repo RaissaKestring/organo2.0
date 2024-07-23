@@ -205,12 +205,11 @@ function App() {
       <section className="times">
         <h1>Minha organização</h1>
           {times.map((time, indice) =>
-         <Time 
-          key={indice} 
-          time={time} 
-          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} 
-          aoDeletar={deletarColaborador}
-          />
+          <Time 
+              key={indice} 
+              time={time} 
+              colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} 
+            />
           )}
       </section>
       <Rodape />
